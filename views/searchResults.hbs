@@ -1,0 +1,31 @@
+<h2>Movie Search Results</h2>
+
+<ul>
+  {{#each movies}}
+  
+      
+      <h3>Title: {{title}}</h3>
+      <p> Plot: {{plot}}</p>
+      <p>Genres:</p>
+      {{#each movies.genres}}
+        <li>{{this}}</li>
+      {{/each}}
+      <p>Runtime: {{runtime}} minutes</p>
+      {{!-- <p>Cast: {{cast.join ', '}}</p>
+      <p>Languages: {{languages.join ', '}}</p>
+      <p>Released: {{released}}</p>
+      <p>Directors: {{directors.join ', '}}</p>
+      <p>Writers: {{writers.join ', '}}</p>
+      <p>Awards: {{awards.text}}</p>
+      <p>Last Updated: {{lastupdated}}</p>
+      <p>Year: {{year}}</p>
+      <p>IMDb Rating: {{imdb.rating}}</p>
+      <p>IMDb Votes: {{imdb.votes}}</p>
+      <p>IMDb ID: {{imdb.id}}</p>
+      <p>Countries: {{countries.join ', '}}</p> 
+      <p>Type: {{type}}</p> --}}
+      <p>Number of Comments: {{num_mflix_comments}}</p>
+      
+
+  {{/each}}
+</ul>
